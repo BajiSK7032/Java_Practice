@@ -9,7 +9,7 @@ public class DimodStar_Printing {
 	    public static void main(String[] args) {
 	    	int n=15;
 	    	
-	    	Drimod_print (n);
+	    	//Drimod_print (n);
 	    	
 	    	
 	    	String[] pattern = diamondPrinting(n);
@@ -58,13 +58,14 @@ public class DimodStar_Printing {
 	   return ans.toArray(new String[ans.size()]);
 
 	    }
-	    public static void Drimod_print (int rows) {
-	    	 // Change this value to adjust the number of rows
+	   
+	    public static void Drimod_print (int n) {
+	    	 // Change this value to adjust the number of n
 	        
-	        for (int i = 1; i <= rows; i++) {
+	        for (int i = 1; i <= n; i++) {
 	        	
 	            // Print spaces before the stars
-	            for (int j = rows - i; j >= 1; j--) {
+	            for (int j = n - i; j >= 1; j--) {
 	                System.out.print(" ");
 	            }
 	            
@@ -76,9 +77,9 @@ public class DimodStar_Printing {
 	            System.out.println(); // Move to the next line
 	        }
 	        
-	        for (int i = rows - 1; i >= 1; i--) {
+	        for (int i = n - 1; i >= 1; i--) {
 	            // Print spaces before the stars
-	            for (int j = rows - i; j >= 1; j--) {
+	            for (int j = n - i; j >= 1; j--) {
 	                System.out.print(" ");
 	            }
 	            
